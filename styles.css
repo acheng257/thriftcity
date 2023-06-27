@@ -1,0 +1,189 @@
+/*
+ * Author: Alice Cheng
+ * CS 132 Spring 2023
+ * CSS for the e-commerce website Thrift City.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body, .crumb {
+  background: #557A95;
+  /* background: #fff url(https://static.vecteezy.com/system/resources/previews/003/588/032/original/pastel-ombre-background-in-pink-and-purple-vector.jpg) no-repeat;  */
+}
+
+body, button {
+  font-family: Caveat, sans-serif;
+}
+
+body {
+  background-size: cover;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hidden-photos, aside, main, .button, #alice-photos {
+  align-items: center;
+}
+
+main, .button, #profile, #sales, #sales-home, #single-prod {
+  display: flex;
+  flex-direction: row;
+}
+
+#sales, #sales-home, #single-prod {
+  justify-content: space-evenly;
+}
+
+#sales {
+  flex-wrap: wrap;
+}
+
+#sales img, #single-prod img, #sales-home img {
+  width: 270px;
+  height: 270px;
+}
+
+p {
+  font-size: 20pt;
+}
+
+.img, h2, footer, figure, figcaption, .crumb a, button {
+  text-align: center;
+}
+
+img:hover, button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.crumb a, .dropdown {
+  float: left;
+}
+
+body > header, footer {
+  width: 100%;
+}
+
+section {
+  padding: 40px;
+}
+
+figure {
+  margin: auto auto;
+  padding: 30px;
+  background-color: rgba(177,162,150,0.2);
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+aside, p, button {
+  background-color: rgba(255,255,255,0.2);
+}
+
+section header, h1, p {
+  padding: 15px;
+}
+
+body > header, footer {
+  line-height: 50px;
+  margin: 15px auto;
+}
+
+footer, h1 {
+  font-style: italic;
+}
+
+nav {
+  border-bottom: 1px solid black;
+}
+
+/* Style the links inside the navigation bar */
+.crumb a {
+  color: #f2f2f2;
+  font-size: 17px;
+}
+
+.crumb a, .dropdown .dropbtn {
+  padding: 14px 16px;
+}
+
+.crumb a, .dropdown-content a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ddd;
+}
+
+.crumb a:hover, .dropdown-content a {
+  color: black;
+}
+
+.dropdown .dropbtn {
+  color: white;
+}
+
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+}
+
+.dropdown-content a, ul {
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content, .dropdown-content a  {
+  display: block;
+}
+
+button {
+  font-size: 12pt;
+  padding: 8px;
+  border: 2pt solid black;
+  width: fit-content;
+}
+
+.button, #profile {
+  justify-content: center;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.crumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #7395AE;
+}
