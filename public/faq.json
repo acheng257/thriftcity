@@ -1,0 +1,22 @@
+{
+    "1": {
+        "question": "Where are your items sourced from?",
+        "answer": "All of the items on sale at Thrift City are donated by customers who no longer want or need these items. We sell them at a much lower price than retail to encourage recycling!"
+    },
+    "2": {
+        "question": "Are your products clean?",
+        "answer": "Yes, everything that is donated is sanitized and washed before being put up for sale!"
+    },
+    "3": {
+        "question": "How many days will it take for my items to ship?",
+        "answer": "We want to make sure your purchases are packaged with care and in good condition. Please expect around 3-5 business days for your items to ship."
+    },
+    "4": {
+        "question": "Do I need to sign up to make an order?",
+        "answer": "Nope! We are currently working on a rewards program for our loyal customers which you can sign up for to earn rewards over time, but for now you can buy items without any account!"
+    },
+    "5": {
+        "question": "What payment methods can I use?",
+        "answer": "We accept credit and debit cards."
+    }
+ }

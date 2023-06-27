@@ -1,8 +1,9 @@
 /**
  * NAME: Alice Cheng
- * DATE: May 4, 2023
- * Javascript file for the Thrift City home page. Contains a navigation bar to switch between
- * pages and functionalities of the e-commerce store.
+ * DATE: June 7, 2023
+ * Javascript file for the Thrift City promotions/sales page. Filters products for ones that are
+ * tagged to be on sale and generates display cards for each one using a GET request. Clicking 
+ * on a display card brings user to the single-product view for that item.
  */
 
 (function () {
@@ -12,7 +13,7 @@
      * Initializes the JS file in the runtime.
      */
     function init() {
-        queryFilter();
+        queryFilter("products");
     }
 
     /**
@@ -21,14 +22,15 @@
      * @param {JSON} product object containing key-value pairs with product specifications
      * @param {String} key the key of the element in the JSON object
      */
-    function createCard(product) {
-        let section = id("sales-home");
+    function createCard(product, key) {
+        let section = id("sales");
         let card = gen("section");
         let fig = gen("figure");
         let p = gen("p");
 
-        p.textContent = product.itemName;
-        card.class = "product";
+        p.innerHTML = product.itemName;
+        p.innerHTML += '<br />$' + product.price;
+        card.id = key;
         
         let img = gen("img");
         img.src = product.image.src;
@@ -37,6 +39,7 @@
         fig.appendChild(img);
         fig.appendChild(p);
         card.appendChild(fig);
+        card.addEventListener('click', toggleSingleProductView);
         section.appendChild(card);
     }
 
@@ -45,13 +48,17 @@
      * Clears the current display and calls createCard to generate display cards for each item.
      */
     async function queryFilter() {
-        let filter = 'Featured';
+        let who = 'alice';
+        let filter = "Sale";
         let url = '/filter/?filter=' + filter;
         let resp = await fetch(url);
 
         try {
             checkStatus(resp);
             let data = await resp.json();
+            let cards = id("sales");
+
+            cards.innerHTML = "";
             
             for (const key in data) {
                 createCard(data[key], key);
@@ -60,6 +67,13 @@
         catch {
             handleError("Unable to display heading");
         }
+    }
+
+    /**
+     * Changes page view to the single-product view of the product that was clicked on.
+     */
+    function toggleSingleProductView() {
+        window.location.href = "/single-product.html?" + this.id;
     }
 
     init();

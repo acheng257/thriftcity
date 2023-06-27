@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+  Name: Alice Cheng
+  CS 132 Spring 2023
+  Date: June 7, 2023
+
+  This file contains the HTML elements for the single-product view page of Thrift City.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="utils.js"></script>
+    <script defer src="single-product.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Thrift City</title>
+  </head>
+  <body>
+    <!-- Top header -->
+    <header>
+      <h1>Thrift City</h1>
+      <h2>Products</h2>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="crumb">
+      <div>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">Shop</button>
+          <div class="dropdown-content">
+            <a href="product.html">Products</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Sales</button>
+          <div class="dropdown-content">
+            <a href="promo.html">Promotions</a>
+          </div>
+        </div>
+
+        <a href="feedback.html">Feedback</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <a href="cart.html">Cart</a>
+    </nav>
+
+    <p id="message-area" class="hidden"></p>
+
+    <section id="single-prod">
+        <section>
+        </section>
+    </section>
+    <footer>
+        <p>Thrift City &copy; 2023</p>
+    </footer>
+  </body>
+</html>

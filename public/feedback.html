@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+  Name: Alice Cheng
+  CS 132 Spring 2023
+  Date: June 7, 2023
+
+  This file contains the HTML elements for the feedback page of my e-commerce website, Thrift City. There is a main
+  text area which allows users to input text as feedback.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="utils.js"></script>
+    <script defer src="feedback.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Thrift City</title>
+  </head>
+  <body>
+    <header>
+      <h1> 
+        Thrift City
+      </h1> 
+    </header>
+    <nav class="crumb">
+      <div>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">Shop</button>
+          <div class="dropdown-content">
+            <a href="product.html">Products</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Sales</button>
+          <div class="dropdown-content">
+            <a href="promo.html">Promotions</a>
+          </div>
+        </div>
+
+        <a href="#">Feedback</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <a href="cart.html">Cart</a>
+    </nav>
+    
+    <p id="message-area" class="hidden"></p>
+    
+    <main>
+        <div>
+          <header>
+            <h1>Submit your feedback here!</h1>
+          </header>
+          <p>
+            We pride ourselves in supplying customers with their favorite and most trendy styles.
+            We'd love to hear from you; let us know if there is anything we can improve!
+          </p>
+          <textarea id="feedback" name="message" rows="10" cols="100"></textarea>
+          <div class="button" id="feedback-btn">
+            <button id="submit-feedback">Submit Feedback</button>
+          </div>
+          <p id="thanks" class="hidden">
+            Thank you for your feedback! We hope you had a good experience at Thrift City! :)
+          </p>
+          <p id="error" class="hidden">
+            Error: Cannot submit empty text field.
+          </p>
+        </div>
+    </main>
+    
+    <footer>
+      <p>Thrift City &copy; 2023</p>
+    </footer>
+  </body>
+</html>

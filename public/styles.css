@@ -4,56 +4,67 @@
  * CSS for the e-commerce website Thrift City.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
 
 body, .crumb {
-  background: #557A95;
-  /* background: #fff url(https://static.vecteezy.com/system/resources/previews/003/588/032/original/pastel-ombre-background-in-pink-and-purple-vector.jpg) no-repeat;  */
+  background: #88A0A8;
 }
 
-body, button {
-  font-family: Caveat, sans-serif;
+body, button, textarea {
+  font-family: Vollkorn, sans-serif;
 }
 
 body {
   background-size: cover;
-  padding-left: 10px;
-  padding-right: 10px;
+  min-height: 100vh;
+}
+
+body, main>div, #product-info {
   display: flex;
   flex-direction: column;
 }
 
-#hidden-photos, aside, main, .button, #alice-photos {
+#hidden-photos, aside, main, .button, #alice-photos, main>div, header, #product-info {
   align-items: center;
 }
 
-main, .button, #profile, #sales, #sales-home, #single-prod {
+main, .button, #profile, #sales, #sales-home, #single-prod, header, #cart, .crumb {
   display: flex;
   flex-direction: row;
 }
 
-#sales, #sales-home, #single-prod {
+#sales, #sales-home, #single-prod, #cart {
   justify-content: space-evenly;
 }
 
-#sales {
+#sales, #cart {
   flex-wrap: wrap;
 }
 
-#sales img, #single-prod img, #sales-home img {
+div:not(.crumb div), #thanks, #error, header, body > header, footer, nav {
+  width: 100%;
+}
+
+#sales img, #single-prod img, #sales-home img, #cart img {
   width: 270px;
   height: 270px;
 }
 
 p {
   font-size: 20pt;
+  background-color: #546A76;
 }
 
-.img, h2, footer, figure, figcaption, .crumb a, button {
+.img, h2, footer, figure, figcaption, .crumb a, button, #cart-banner, p {
   text-align: center;
 }
 
-img:hover, button:hover {
+h1, h2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img:not(#front-page):hover, button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
@@ -63,24 +74,25 @@ img:hover, button:hover {
 }
 
 body > header, footer {
-  width: 100%;
+  background-color: #EDAF97;
 }
 
-section {
+/* section:not(#profile) {
   padding: 40px;
-}
+} */
 
 figure {
   margin: auto auto;
   padding: 30px;
-  background-color: rgba(177,162,150,0.2);
+  background-color: #0B394840;
+  /* background-color: rgba(177,162,150,0.2); */
 }
 
-figcaption {
+figcaption, #question {
   font-weight: bold;
 }
 
-aside, p, button {
+aside, button {
   background-color: rgba(255,255,255,0.2);
 }
 
@@ -90,15 +102,17 @@ section header, h1, p {
 
 body > header, footer {
   line-height: 50px;
-  margin: 15px auto;
 }
 
-footer, h1 {
+footer, h1, #answer {
   font-style: italic;
 }
 
 nav {
   border-bottom: 1px solid black;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -173,17 +187,66 @@ button {
   width: fit-content;
 }
 
-.button, #profile {
+.button, #profile, header, #single-prod {
   justify-content: center;
 }
 
-.dropdown-content {
+.dropdown-content, .hidden {
   display: none;
 }
 
-.crumb {
+.crumb, main>div, #promo-banner {
+  background-color: #C49792;
+}
+
+h1 {
   display: flex;
-  flex-direction: row;
+}
+
+.crumb, h1, body>header, #product-info {
   justify-content: space-between;
-  background-color: #7395AE;
+}
+
+#front-page {
+  padding: 0px;
+}
+
+#sales-home {
+  margin-bottom: 40px;
+}
+
+#sales-home p, #sales p {
+  font-size: 15px;
+}
+
+#sales-banner {
+  background-color: #88A0A8;
+}
+
+#sales section, #cart section {
+  margin: 5px;
+}
+
+#product-info {
+  background-color: #52324990;
+}
+
+footer {
+  margin-top: auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#single-prod {
+  margin-top: 100px;
+}
+
+#faq-ul {
+  list-style-type: none;
+}
+
+body, .crumb, p, nav, #front-page {
+  margin: 0px;
 }

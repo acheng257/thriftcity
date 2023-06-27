@@ -62,5 +62,13 @@ function checkStatus(response) {
  */
 function handleError(errMsg) {
     // TODO: fix this
-    console.log("error");
+    if (typeof errMsg === "string") {
+        id("message-area").textContent = errMsg;
+    } else {
+        // the err object was passed, don't want to show it on the page;
+        // instead use generic error message.
+        id("message-area").textContent =
+            "An error ocurred fetching data. Please try again later.";
+    }
+    id("message-area").classList.remove("hidden");
 }

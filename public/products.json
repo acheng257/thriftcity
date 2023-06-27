@@ -1,0 +1,227 @@
+{
+    "product1": {
+        "itemName": "Knit Tie-Front Mini Dress",
+        "itemColor": "Light Blue Floral",
+        "price": 20,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/hollister_dress.avif", 
+            "alt": "Knit Tie-Front Mini Dress"
+        },
+        "description": "A cute floral dress perfect for spring and summer!",
+        "filters": [
+            "Women"
+        ]
+
+    },
+        
+    "product2": {
+        "itemName": "Social Tourist V-Waist Skort",
+        "itemColor": "Light Pink",
+        "price": 15,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/hollister_skirt.avif", 
+            "alt": "Social Tourist V-Waist Skort"
+        },
+        "description": "A vibrant pink color that'll pop out from the crowd.",
+        "filters": [
+            "Women"
+        ]
+    },
+
+    "product3": {
+        "itemName": "Relaxed Top Gun Graphic Tee",
+        "itemColor": "Faded Black",
+        "price": 20,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/hollister_graphic.avif", 
+            "alt": "Relaxed Top Gun Graphic Tee"
+        },
+        "description": "Intricately designed graphic tee for all Top Gun lovers.",
+        "filters": [
+            "Unisex", "Men", "Women"
+        ]
+    },
+
+    "product4": {
+        "itemName": "Alanya Pant",
+        "itemColor": "Ashen",
+        "price": 35,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/aritzia_pant.webp", 
+            "alt": "Alanya Pant"
+        },
+        "description": "Intricately designed graphic tee for all Top Gun lovers.",
+        "filters": [
+            "Women", "Featured"
+        ]
+    },
+
+    "product5": {
+        "itemName": "On-The-Way Exposed Bag",
+        "itemColor": "Turner Taupe",
+        "price": 22,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/aritzia_fanny.webp", 
+            "alt": "On-The-Way Exposed Bag"
+        },
+        "description": "Sleek belt bag to fit all your needs.",
+        "filters": [
+            "Women", "Men", "Unisex", "Accessories", "Featured"
+        ]
+    },
+
+    "product6": {
+        "itemName": "Djungelskog",
+        "itemColor": "Brown",
+        "price": 30,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/djungelskog.avif", 
+            "alt": "Djungelskog"
+        },
+        "description": "Adorable brown bear friend.",
+        "filters": [
+            "Toys"
+        ]
+    },
+
+    "product7": {
+        "itemName": "Jerry the Giraffe Pillow Chum",
+        "itemColor": "Brown",
+        "price": 1,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/jerry.jpg", 
+            "alt": "Jerry the Giraffe Pillow Chum"
+        },
+        "description": "Cuddly travel buddy that functions as both a toy and a pillow!",
+        "filters": [
+            "Toys", "Sale"
+        ]
+    },
+
+    "product8": {
+        "itemName": "Brown Peaches 17\" Swim Trunks",
+        "itemColor": "Brown with Summer-y Peach Embroidery",
+        "price": 25,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/trunks.jpeg", 
+            "alt": "Brown Peaches 17\" Swim Trunks"
+        },
+        "description": "It's always summer when you wear these trunks!",
+        "filters": [
+            "Men", "Sale"
+        ]
+    },
+
+    "product9": {
+        "itemName": "Stitch Button-Through Button Polo",
+        "itemColor": "Dark Green",
+        "price": 40,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/polo.webp", 
+            "alt": "Stitch Button-Through Button Polo"
+        },
+        "description": "Comfortable knit fabric with textured stitching details.",
+        "filters": [
+            "Men"
+        ]
+    },
+
+    "product10": {
+        "itemName": "Onitsuka Tiger Serrano Sneaker",
+        "itemColor": "Olive",
+        "price": 65,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/shoe.webp", 
+            "alt": "Onitsuka Tiger Serrano Sneaker"
+        },
+        "description": "Lightweight and padded sole for comfort and performance.",
+        "filters": [
+            "Men", "Sale", "Accessories"
+        ]
+    },
+
+    "product11": {
+        "itemName": "Snoopy Tennis Washed Dad Hat",
+        "itemColor": "Green",
+        "price": 25,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/snoopy.webp", 
+            "alt": "Snoopy Tennis Washed Dad Hat"
+        },
+        "description": "Cute and snug fitting baseball cap with adjustable strap.",
+        "filters": [
+            "Men", "Sale", "Accessories"
+        ]
+    },
+
+    "product12": {
+        "itemName": "Checkered Straw Bucket Hat",
+        "itemColor": "Green",
+        "price": 30,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/bucket.webp", 
+            "alt": "Checkered Straw Bucket Hat"
+        },
+        "description": "Beachy bucket hat for warm weather!",
+        "filters": [
+            "Women", "Accessories"
+        ]
+    },
+
+    "product13": {
+        "itemName": "Puffy Heart Post Earring",
+        "itemColor": "Silver",
+        "price": 8,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/earring.webp", 
+            "alt": "Puffy Heart Post Earring"
+        },
+        "description": "Heart-shaped polished earrings with a shiny finish.",
+        "filters": [
+            "Women", "Accessories", "Sale", "Featured"
+        ]
+    },
+
+    "product14": {
+        "itemName": "Boyfriend Denim Shorts (Frayed Hem)",
+        "itemColor": "Blue",
+        "price": 25,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/shorts.webp", 
+            "alt": "Boyfriend Denim Shorts (Frayed Hem)"
+        },
+        "description": "Non-stretch denim with 5 pockets and a relaxed fit.",
+        "filters": [
+            "Women"
+        ]
+    },
+
+    "product15": {
+        "itemName": "Reusable Tote Bag",
+        "itemColor": "Strawberry Print",
+        "price": 10,
+        "sale": false,
+        "image": {
+            "src": "imgs/products/tote.webp", 
+            "alt": "Reusable Tote Bag"
+        },
+        "description": "Environmentally-friendly and perfect for shopping trips or a day out!",
+        "filters": [
+            "Accessories", "Unisex"
+        ]
+    }
+ }
